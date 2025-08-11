@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --text: #2c3e50;
+            --background: #fffef5;
+            --accent: #a8968a;
+            --secondary: #8b8680;
+            --link: #7a8b8a;
+            --max-width: 580px;
+        }
+
+        :root.dark {
+            --text: #e8e6e3;
+            --background: #2a2826;
+            --accent: #9b8b7e;
+            --secondary: #a8a098;
+            --link: #8fa09f;
+        }
+
+        html {
+            font-size: 20px;
+            line-height: 1.6;
+            font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            color: var(--text);
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            transition: background 0.3s ease, color 0.3s ease;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Subtle background pattern */
+        body::before {
+            display: none;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+            display: inline-block;
+            transition: transform 0.5s ease;
+        }
+
+        h1:hover {
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-2deg); }
+            75% { transform: rotate(2deg); }
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .bio {
+            margin-bottom: 2.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .links {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .links a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+            padding-bottom: 2px;
+        }
+
+        .links a:hover {
+            border-bottom-color: var(--link);
+        }
+
+        /* Theme toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--text);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .theme-toggle:hover {
+            background: var(--text);
+            color: var(--background);
+            transform: scale(1.05);
+        }
+
+ 
+        /* Optional*/
+        .photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .photo:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: var(--secondary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            html {
+                font-size: 18px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .bio {
+                text-align: left;
+            }
+            
+            .theme-toggle {
+                top: 1rem;
+                right: 1rem;
+            }
+            
+            .art {
+                right: -30%;
+                opacity: 0.05;
+            }
+            
+            .links {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .theme-toggle, .art, .footer {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <div class="art">
+        <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="40" />
+            <circle cx="100" cy="100" r="60" />
+            <circle cx="100" cy="100" r="80" />
+            <circle cx="100" cy="100" r="95" />
+        </svg>
+    </div>
+
+    <main class="container">
+        <!-- Uncomment if you want to add a photo -->
+        <!-- <img src="your-photo.jpg" alt="Your Name" class="photo"> -->
+        
+        <h1>Your Name</h1>
+        <p class="subtitle">What you do or who you are</p>
+        
+        <p class="bio">
+            A brief paragraph about yourself. Perhaps you're a researcher exploring the intersection of technology and human experience, or a designer crafting digital tools with intention and care. Whatever your story, this is where you share the essential thread—not everything, just enough to give someone a sense of who you are and what drives your work. The beauty lies in what you choose to leave unsaid.
+        </p>
+        
+        <nav class="links">
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:your@email.com">Email</a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <span id="year"></span>
+    </footer>
+
+    <script>
+        // Theme toggle
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', 
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
