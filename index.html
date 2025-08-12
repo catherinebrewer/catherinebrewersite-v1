@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Catherine Brewer</title>
     <style>
         * {
             margin: 0;
@@ -16,7 +16,7 @@
             --background: #fffef5;
             --accent: #a8968a;
             --secondary: #8b8680;
-            --link: #7a8b8a;
+            --link: #0000EE;
             --max-width: 580px;
         }
 
@@ -25,12 +25,12 @@
             --background: #2a2826;
             --accent: #9b8b7e;
             --secondary: #a8a098;
-            --link: #8fa09f;
+            --link: #8AB4F8;
         }
 
         html {
-            font-size: 20px;
-            line-height: 1.6;
+            font-size: 18px;
+            line-height: 1;
             font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -89,18 +89,25 @@
         }
 
         .bio {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
             font-size: 1.05rem;
             line-height: 1.7;
-            text-align: justify;
-            hyphens: auto;
         }
 
+        a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+            padding-bottom: 2px;
+        }
+
+
         .links {
+            color: var(--link);
             display: flex;
             gap: 2rem;
             margin-bottom: 3rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: 0.95rem;
         }
 
@@ -142,8 +149,7 @@
             transform: scale(1.05);
         }
 
- 
-        /* Optional*/
+        /* Optional: Add your photo */
         .photo {
             width: 120px;
             height: 120px;
@@ -177,10 +183,6 @@
             
             h1 {
                 font-size: 1.8rem;
-            }
-            
-            .bio {
-                text-align: left;
             }
             
             .theme-toggle {
@@ -217,33 +219,30 @@
         <span class="theme-icon">◐</span>
     </button>
 
-    <div class="art">
-        <svg viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="40" />
-            <circle cx="100" cy="100" r="60" />
-            <circle cx="100" cy="100" r="80" />
-            <circle cx="100" cy="100" r="95" />
-        </svg>
-    </div>
-
     <main class="container">
         <!-- Uncomment if you want to add a photo -->
         <!-- <img src="your-photo.jpg" alt="Your Name" class="photo"> -->
         
+        <!--<h1>Catherine Brewer</h1>-->
         
         <p class="bio">
-            Hi! I'm Catherine. I'm a Program Associate at Open Philanthropy, where I focus on  evals and technical governance grantmaking.
+            Hi! I'm Catherine. I'm a Program Associate at <a href="https://www.openphilanthropy.org/">Open Philanthropy</a>, where I focus on evals and technical governance grantmaking.
+        </p>
+
+        <p class="bio">
+            Before I joined OP, I was a <a href="https://www.governance.ai/">GovAI</a> summer fellow, co-founded Oxford's AI safety student group, and studied philosophy and economics.
+        </p>
+
+        <p class="bio">
+            I donate 10% of my income to effective charities. You should <a href="https://www.givingwhatwecan.org/">try it</a>!
         </p>
         
         <nav class="links">
             <a href="https://twitter.com/wilhelmscreamin" target="_blank" rel="noopener">Twitter</a>
             <a href="https://linkedin.com/in/ce-brewer" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:ce.brewer@protonmail.com" target="_blank" rel="noopener">Email</a>
         </nav>
     </main>
-
-    <footer class="footer">
-        <span id="year"></span>
-    </footer>
 
     <script>
         // Theme toggle
@@ -259,9 +258,6 @@
             (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         }
-
-        // Set current year
-        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
