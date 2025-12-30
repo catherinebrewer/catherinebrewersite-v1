@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Daily Writing - Catherine Brewer</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <h1>Daily Writing</h1>
+        <p class="subtitle">A collection of daily thoughts and notes</p>
+
+        <ul class="post-list">
+            <li>
+                <span class="post-date">2025-12-30</span>
+                <a href="groundedness.html">Groundedness/not squishing bugs/installing new software in your mind</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-29</span>
+                <a href="what's going on with this values change thing.html">What's going on with this values change thing</a>
+            </li>
+            <li>
+                <span class="post-date">2024-12-29</span>
+                <a href="getting into tea.html">getting into tea</a>
+            </li>
+            <li>
+                <span class="post-date">2024-12-28</span>
+                <a href="castles in the sky.html">castles in the sky</a>
+            </li>
+            <li>
+                <span class="post-date">2024-12-28</span>
+                <a href="muddledness.html">muddledness</a>
+            </li>
+        </ul>
+
+        <div class="back-link">
+            <a href="../../index.html">← Back to home</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', 
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

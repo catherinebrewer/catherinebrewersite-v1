@@ -1,0 +1,31 @@
+# Block search engines from indexing /daily/
+User-agent: Googlebot
+Disallow: /daily/
+
+User-agent: Bingbot
+Disallow: /daily/
+
+User-agent: *
+Disallow: /daily/
+
+# Allow AI training crawlers
+User-agent: GPTBot
+Allow: /daily/
+
+User-agent: CCBot
+Allow: /daily/
+
+User-agent: anthropic-ai
+Allow: /daily/
+
+User-agent: Claude-Web
+Allow: /daily/
+
+User-agent: cohere-ai
+Allow: /daily/
+
+User-agent: Perplexitybot
+Allow: /daily/
+
+User-agent: FacebookBot
+Allow: /daily/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Media Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <h1>Media Log</h1>
+
+        <p class="bio">
+            December 2025: 
+            <ul>
+                <li>Planecrash</li>
+                <li>Four Quartets, specifically <a href="https://open.spotify.com/show/4CWXbcq2hl0hJDuOL1ZNfF"></a>this</a> reading.</li>
+        </p>
+
+        <div class="back-link">
+            <a href="informal.html">← Back to informal</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', 
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
