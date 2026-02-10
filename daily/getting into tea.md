@@ -1,6 +1,7 @@
 ---
 date: 2024-12-29
 wip: false 
+title: Getting into tea
 ---
 
 Logan Strohl has some [great blog posts](https://www.loganstrohl.com/how-to-taste) on chocolate tasting. Partly inspired by that, partly [some great tea I've drank through my life](https://espr.camp/), partly living in a house of voracious interesting-tea-drinkers, I'm trying to get into tea a little more. 
