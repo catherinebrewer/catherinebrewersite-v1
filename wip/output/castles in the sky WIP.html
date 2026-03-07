@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>castles in the sky WIP - Catherine Brewer</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .post-title {
+            font-family: 'Caveat', cursive;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <div class="post-header">
+            <div class="post-date-header">December 28, 2025</div>
+            <h1 class="post-title">castles in the sky WIP</h1>
+        </div>
+
+        <div class="post-content">
+<ul>
+<li>hanna saying that the reason i liked philosophy so much is wanting to build a logically consistent castle in the sky, and live there...<ul>
+<li>(and this feels true to me, it is indeed a lot of the appeal. the need to have some coherent structure govern everything)</li>
+</ul>
+</li>
+<li>so much of philosophy in the end looking like, throwing your hands up, saying you don't know. or circling back round to commonsense positions.<ul>
+<li>i thought hard and angstily about ethics for 3y and i left in some muddle of virtue+consequentialism</li>
+<li>on some level, easy to ask: well, what was the point?</li>
+</ul>
+</li>
+<li>wanting certainty and chasing certainty<ul>
+<li>is that wrong?</li>
+<li>not intrinsically. but i worry it can lead to philosophy becoming more like a game, a debate contest</li>
+<li>and perhaps there are important things which are very hard, if not impossible, to cash out in this way. cf muddledness WIP</li>
+</ul>
+</li>
+<li>playing games with words and riding roughshod over intuitions<ul>
+<li>one disease of academic philosophy is i think failure to grasp the stakes, how easy it is to slip into playing games with arguments. recursing down the tree, objection and counter-objection, parry, find your patch and squabble over it, etc</li>
+<li>(but are there stakes on the picture i'm sketching? how and why? if we all end up back where we started, then why bother doing it, and if you do it, you might as well entertain yourself with verbal disputes in the meantime)</li>
+<li>sometimes legibilising things kills them, and sometimes legibilising twists them: it shouldn't be the price of entry; be careful with your heart here</li>
+</ul>
+</li>
+<li>in thrall to "common sense"<ul>
+<li>but just as there's a failure mode of, rationalism triumphs, ignoring squishy feelings etc, there's a failure of deferring, or not looking hard</li>
+<li>despicable, on some level. oh what, you'll defer all wisdom to this crowd you were born into? you'll freeride off the back of the world?</li>
+<li>too easy to cheat yourself this way<ul>
+<li>meaning, ignore uncomfortable truths, deceive yourself, keep things easy and light</li>
+</ul>
+</li>
+<li>(but again, why even care? if this is all castles then why do you need coherency, etc?)</li>
+<li>scott alexander on bullet-biting and not making trades that make seagulls peck his eyes out</li>
+<li>why does it need to be orderly?<ul>
+<li>is this merely an aesthetic preference? the aesthetics of thought, just a way i'd like to arrange the chambers of my mind, the channels i think through?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>how do you do reflective equilibrium and not cheat to make things easier for yourself, anyway?</li>
+<li>there's a story of: the reason to do all of this is to be the person who would do this, or learn the methods of castle-building, or see what your beliefs demand of you. do i believe it?<ul>
+<li>at least not wholly: part of what i'm pointing at is more like, but why motivated by this deep desperate desire for a castle?<ul>
+<li>just psychological? clinging?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>maybe there's something to, viscerally feeling how these things conflict, and aiming at coherence, and having that be your path back to muddledness</li>
+</ul>
+        </div>
+
+        <div class="back-link">
+            <a href="../index.html">← Back to WIP</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme',
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

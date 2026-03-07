@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>muddledness - Catherine Brewer</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <div class="post-header">
+            <div class="post-date-header">December 28, 2025</div>
+            <h1 class="post-title">muddledness</h1>
+        </div>
+
+        <div class="post-content">
+<h1>muddledness</h1>
+<p>Some related thoughts:<br />
+- that there's something important in humans being muddled, having conflicting wants and nontransitive preferences or incomparable choices (in Chang's sense); that to become more coherent is to lose something (c.f., Planecrash/Project Lawful)<br />
+- That language is imprecise and perhaps necessarily imprecise; that as soon as one learns the words to speak something it ceases to be the thing that must be spoken; cf Eliot on last year's words. That some things needs must be imprecise, badly approximated, shrugged at, underwhelmingly described<br />
+- Something here too about the mystical and divine. That there's something humans get from the spiritual that we can get no other way, that something in it rings deeply true and importantly that we couldn't get the truth plainer or more precisely, that it must be shrouded in drama and verve and allegory, and yet seems all the more real for it<br />
+- (Something in here too about Wittengenstein and universality and private languages, I forget...)<br />
+- Belief then producing reliable trust? Augustine on theology. That the first step, to generate evidence, requires belief.</p>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← Back to daily writing</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', 
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

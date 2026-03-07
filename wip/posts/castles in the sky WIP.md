@@ -1,0 +1,27 @@
+- hanna saying that the reason i liked philosophy so much is wanting to build a logically consistent castle in the sky, and live there...
+	- (and this feels true to me, it is indeed a lot of the appeal. the need to have some coherent structure govern everything)
+- so much of philosophy in the end looking like, throwing your hands up, saying you don't know. or circling back round to commonsense positions.
+	- i thought hard and angstily about ethics for 3y and i left in some muddle of virtue+consequentialism
+	- on some level, easy to ask: well, what was the point?
+- wanting certainty and chasing certainty
+	- is that wrong?
+	- not intrinsically. but i worry it can lead to philosophy becoming more like a game, a debate contest
+	- and perhaps there are important things which are very hard, if not impossible, to cash out in this way. cf [[muddledness WIP]]
+- playing games with words and riding roughshod over intuitions
+	- one disease of academic philosophy is i think failure to grasp the stakes, how easy it is to slip into playing games with arguments. recursing down the tree, objection and counter-objection, parry, find your patch and squabble over it, etc
+	- (but are there stakes on the picture i'm sketching? how and why? if we all end up back where we started, then why bother doing it, and if you do it, you might as well entertain yourself with verbal disputes in the meantime)
+	- sometimes legibilising things kills them, and sometimes legibilising twists them: it shouldn't be the price of entry; be careful with your heart here
+- in thrall to "common sense"
+	- but just as there's a failure mode of, rationalism triumphs, ignoring squishy feelings etc, there's a failure of deferring, or not looking hard
+	- despicable, on some level. oh what, you'll defer all wisdom to this crowd you were born into? you'll freeride off the back of the world?
+	- too easy to cheat yourself this way
+		- meaning, ignore uncomfortable truths, deceive yourself, keep things easy and light
+	- (but again, why even care? if this is all castles then why do you need coherency, etc?)
+	- scott alexander on bullet-biting and not making trades that make seagulls peck his eyes out
+	- why does it need to be orderly?
+		- is this merely an aesthetic preference? the aesthetics of thought, just a way i'd like to arrange the chambers of my mind, the channels i think through?
+- how do you do reflective equilibrium and not cheat to make things easier for yourself, anyway?
+- there's a story of: the reason to do all of this is to be the person who would do this, or learn the methods of castle-building, or see what your beliefs demand of you. do i believe it?
+	- at least not wholly: part of what i'm pointing at is more like, but why motivated by this deep desperate desire for a castle?
+		- just psychological? clinging?
+- maybe there's something to, viscerally feeling how these things conflict, and aiming at coherence, and having that be your path back to muddledness

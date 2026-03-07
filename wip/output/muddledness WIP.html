@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>muddledness WIP - Catherine Brewer</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .post-title {
+            font-family: 'Caveat', cursive;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <div class="post-header">
+            <div class="post-date-header">March 07, 2026</div>
+            <h1 class="post-title">muddledness WIP</h1>
+        </div>
+
+        <div class="post-content">
+<p>Some related thoughts:
+* that there's something important in humans being muddled, having conflicting wants and nontransitive preferences or incomparable choices (in Chang's sense); that to become more coherent is to lose something (c.f., Planecrash)
+* That language is imprecise and perhaps necessarily imprecise; that as soon as one learns the words to speak something it ceases to be the thing that must be spoken; cf Eliot on last year's words. That some things needs must be imprecise, badly approximated, shrugged at, underwhelmingly described
+* Something here too about the mystical and divine. That there's something humans get from the spiritual that we can get no other way, that something in it rings deeply true and importantly that we couldn't get the truth plainer or more precisely, that it must be shrouded in drama and verve and allegory, and yet seems all the more real for it
+* (Something in here too about Wittengenstein and universality and private languages, I forget...)
+* Belief then producing reliable trust? Augustine on theology. That the first step, to generate evidence, requires belief.
+    * Ben Myers on this: “Over time we learn that God’s promise is worthy of our trust. God’s trustworthiness is verified by experience. But we don’t start with verification. We start with trust: this leads to experience: and experience leads to knowledge of God’s trustworthiness. Augustine says, “If you can’t understand, believe, and then you’ll understand.”7 That doesn’t mean that Christian belief is an irrational leap into the dark. It is more like tasting a dish that you have never tried. You have seen other people enjoying it; you have “never tried. You have seen other people enjoying it; you have read the reviews; the chef swears you’ll like it. There are good grounds for trusting, but you will never know for sure until you try it. “Taste and see that the LORD is good,” sings the psalmist (Ps 34:8). The first act is an act of trust that gives rise to ever-increasing certainty, which in turn nourishes a deeper and a more knowledgeable trust. The creed is full of mysterious things. It speaks of things that I can’t immediately observe or verify for myself. I believe in God the Creator. I believe in Jesus Christ, God-become-flesh in the midst of creation. I believe in the Holy Spirit, God invisibly transfiguring creation from within. How could I prove the truth of these statements? How could I know for sure? When I take the first step, I start to see the whole world through the eyes of God’s promise. I start to live in an environment of trust. And then I learn from experience that God is good—“as good as his word,” as the saying goes.”</p>
+        </div>
+
+        <div class="back-link">
+            <a href="../index.html">← Back to WIP</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme',
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

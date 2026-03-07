@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>WIP - Catherine Brewer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .wip-title {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        .wip-disclaimer {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+
+    <main class="container">
+        <h1 class="wip-title">WIP</h1>
+        <p class="wip-disclaimer">These are works in progress, drafts, or otherwise foolish posts. Inclusion doesn't imply endorsement. Also, here be dragons.</p>
+
+        <ul class="post-list">
+            <li>
+                <span class="post-date">2026-03-07</span>
+                <a href="output/muddledness WIP.html">muddledness WIP</a>
+            </li>
+            <li>
+                <span class="post-date">2026-03-07</span>
+                <a href="output/notes on professional philosophy.html">notes on professional philosophy</a>
+            </li>
+            <li>
+                <span class="post-date">2026-03-07</span>
+                <a href="output/Two views on impact.html">Two views on impact</a>
+            </li>
+            <li>
+                <span class="post-date">2026-02-24</span>
+                <a href="output/On loving abstractions.html">On loving abstractions</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-30</span>
+                <a href="output/Groundedness, not squishing bugs, on installing new software in your mind.html">Groundedness, not squishing bugs, on installing new software in your mind</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-29</span>
+                <a href="output/goodness v niceness.html">goodness v niceness</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-29</span>
+                <a href="output/what's going on with this values change thing.html">what's going on with this values change thing</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-29</span>
+                <a href="output/Getting into tea.html">Getting into tea</a>
+            </li>
+            <li>
+                <span class="post-date">2025-12-28</span>
+                <a href="output/castles in the sky WIP.html">castles in the sky WIP</a>
+            </li>
+        </ul>
+
+        <div class="back-link">
+            <a href="../index.html">← Back to home</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme',
+                document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+            );
+        }
+
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
